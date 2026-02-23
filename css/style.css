@@ -1,0 +1,523 @@
+/* =========================
+   RESET & GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER & NAVBAR
+========================= */
+
+header {
+    background: #002147;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area h1 {
+    color: #fff;   /* white */
+    font-size: 26px;  /* size change karna ho to yahan karo */
+}
+
+.logo {
+    color: #fff;   /* white */
+    font-size: 13px;  /* size change karna ho to yahan karo */
+    opacity: 0.8;
+
+}
+.logo-area .tagline {
+    color: #fff;   /* white */
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* Make Nav Horizontal */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* Active Page Highlight */
+.nav-links a[aria-current="page"] {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('../images/hero.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e6b800;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #002147;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #002147;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: #002147;
+    color: #fff;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: auto;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #002147;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background: #001530;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #002147;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* =========================
+   404 PAGE
+========================= */
+
+.error-page {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.error-page h1 {
+    font-size: 80px;
+    color: #002147;
+}
+
+.error-page p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+.navbar .container {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-links {
+    flex-direction: column;
+    align-items: center;
+}
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #002147;
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* =========================
+   IMAGE & FIGURE STYLING
+========================= */
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    margin: 15px 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* =========================
+   HERO SECTION FIX
+========================= */
+
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #002147;
+    color: #fff;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   QUICK LINKS / ASIDE
+========================= */
+
+aside {
+    background: #fff;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+aside h3 {
+    font-size: 20px;
+    color: #002147;
+    margin-bottom: 15px;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #002147;
+    font-weight: 500;
+}
+
+aside a:hover {
+    color: #ffcc00;
+}
+
+/* =========================
+   SECTIONS TEXT & LAYOUT
+========================= */
+
+section h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #002147;
+}
+
+section article {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+section article:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   QUICK FACTS TABLE STYLING
+========================= */
+
+table {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+table th, table td {
+    padding: 15px;
+    font-size: 15px;
+}
+
+table th {
+    font-size: 16px;
+}
+
+/* =========================
+   BLOCKQUOTE STYLING
+========================= */
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    padding: 15px 25px;
+    border-left: 4px solid #ffcc00;
+    background: #fff;
+    border-radius: 6px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* =========================
+   BUTTONS / INTERACTION
+========================= */
+
+.btn, aside a {
+    transition: all 0.3s ease;
+}
+
+.btn:hover, aside a:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
+   RESPONSIVE IMAGE FIXES
+========================= */
+
+@media (max-width: 992px) {
+    figure img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 28px;
+    }
+
+    section h3 {
+        font-size: 22px;
+    }
+
+    aside {
+        margin: 20px 0;
+    }
+}
