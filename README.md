@@ -7,7 +7,7 @@ This project was developed as a portfolio project to demonstrate frontend develo
 
 ##  Live Website
 
-🔗 https://zara324.github.io/university-website/
+🔗 https://farhaty24.github.io/university-website-frontend-project/
 
 ---
 
@@ -118,8 +118,8 @@ Through this project, I improved my skills in:
 
 ##  Author
 
-**Zara**
-GitHub: https://github.com/zara324
+**FARHAT YASMIN**
+GitHub: https://github.com/farhaty324
 
 ---
 
